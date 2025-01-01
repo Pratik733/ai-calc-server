@@ -2,8 +2,8 @@ from dotenv import load_dotenv
 import os
 load_dotenv()
 
-SERVER_URL = 'localhost'
-PORT = process.env.PORT or '8900'
-ENV = 'dev'
+SERVER_URL = os.getenv("SERVER_URL")
+PORT = os.getenv("PORT")
+ENV = os.getenv("ENV")
 
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
